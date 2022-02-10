@@ -1,0 +1,28 @@
+.hero_container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #292b2a;
+  background:
+    linear-gradient(to bottom, var(--main-dark), transparent, var(--main-dark)),
+    linear-gradient(to right, black, transparent, black)
+  ;
+  background-size: 100%, 100%, auto 125%;
+  background-position: center, center, 0px center;
+  background-attachment: scroll, scroll, fixed;
+  background-repeat: no-repeat;
+  margin-top: -96px;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.h2 {
+  font-weight: 400;
+}

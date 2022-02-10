@@ -1,0 +1,132 @@
+.post_cover {
+  width: 100%;
+  padding-top: 56.25%;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, var(--main-dark));
+  }
+}
+
+.post_title {
+  position: relative;
+  margin-top: -32px;
+  z-index: 1;
+  padding: 0px 20px;
+  font-size: 56px;
+  line-height: 60px;
+  color: var(--main-rose);
+}
+
+.post_date {
+  padding: 0px 20px;
+  color: rgba(#eee, .6);
+}
+
+.post_content {
+  padding: 0px 20px;
+  margin: 20px 0px;
+
+  h1, h2, h3, h4, h5, h6 {
+    // color: var(--main-rose);
+    padding-left: 14px;
+    border-left: 10px solid var(--main-rose);
+    margin: 16px 0px 20px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 22px;
+  }
+
+  p, pre, ul, a {
+    font-size: 22px;
+  }
+
+  p {
+    margin: 12px 0px;
+    color: rgba(#eee, .8);
+  }
+
+  a {
+    color: var(--main-rose);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+
+    &:hover {
+      text-decoration-color: var(--main-rose);
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 12px 0px;
+    color: rgba(#eee, .8);
+
+    li {
+      margin-bottom: 12px;
+      position: relative;
+      margin-left: 20px;
+
+      ul {
+        margin: 0;
+        li {
+          margin-bottom: 0px;
+  
+          &::before {
+            background-color: rgba(#eee, .8);
+          }
+        }
+      }
+
+
+      &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 10px;
+        background-color: var(--main-rose);
+        position: absolute;
+        left: -20px;
+        top: 15px;
+      }
+    }
+  }
+
+  pre {
+    padding: 24px;
+    background-color: rgba(#eee, .1);
+    overflow: hidden auto;
+    font-size: 18px;
+  }
+}
