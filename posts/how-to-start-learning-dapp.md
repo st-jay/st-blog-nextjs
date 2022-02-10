@@ -2,7 +2,7 @@
 title: "How can you start learning Blockchain development"
 date: "December 26 2021"
 excerpt: "This is a post which teaches you how you can start learning some blockchain stuff..."
-cover_image: "/images/posts/img1.jpg"
+cover_image: "/st-blog-nextjs/images/posts/img1.jpg"
 blog_category: 'programming'
 ---
 # this is heading 1
